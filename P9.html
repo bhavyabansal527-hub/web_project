@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Responsive Navbar and Card Grid</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #af2c2c;
+    padding: 15px 30px;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+</style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">MyPortfolio</h2>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>My Projects</h1>
+
+        <section class="card-container">
+
+            <div class="card">
+                <h2>Project 1</h2>
+                <p>HTML and CSS Website</p>
+            </div>
+
+            <div class="card">
+                <h2>Project 2</h2>
+                <p>Responsive Web Design</p>
+            </div>
+
+            <div class="card">
+                <h2>Project 3</h2>
+                <p>Flexbox Layout</p>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>
